@@ -11,7 +11,13 @@
 body {
     font-family: 'Inter', sans-serif;
 
-    background: #F5F5F2;
+
+
+
+    background: #FCFAF5;
+
+
+
     font-family: 'Inter', sans-serif;
 }
 
@@ -34,13 +40,33 @@ body {
     text-decoration: none;
 
     color: #2563EB;
-    font-weight: 700;
-    font-size: 1.7rem;
+   
+    font-size:2rem;
+    font-weight:800;
+    
 
     letter-spacing: -0.5px;
 }
 
 /* MENU */
+
+.custom-navbar{
+
+    max-width:1300px;
+
+    min-height:85px;
+
+    margin:20px auto;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+}
 
 .menu-btn {
     display: none;
@@ -52,46 +78,54 @@ body {
     display: none;
 }
 
+.navbar-nav{
 
-.nav-link{
+    gap:15px;
+}
 
+.nav-link {
+
+    font-size:1rem;
     font-weight:500;
 
-    position:relative;
+    padding:10px 15px !important;
 
-    transition:.3s;
+    position: relative;
+
+    transition: .3s;
 }
 
-.nav-link:hover{
+.nav-link:hover {
 
-    color:#2563EB !important;
+    color: #2563EB !important;
 }
 
-.nav-link::after{
+.nav-link::after {
 
-    content:'';
+    content: '';
 
-    position:absolute;
+    position: absolute;
 
-    left:50%;
-    bottom:0;
+    left: 50%;
+    bottom: 0;
 
-    width:0;
-    height:2px;
+    width: 0;
+    height: 2px;
 
-    background:#2563EB;
+    background: #2563EB;
 
-    transition:.3s;
+    transition: .3s;
 
-    transform:translateX(-50%);
+    transform: translateX(-50%);
 }
 
-.nav-link:hover::after{
+.nav-link:hover::after {
 
-    width:80%;
+    width: 80%;
 }
 
 .nav-menu a {
+
     text-decoration: none;
     color: #374151;
 
@@ -122,37 +156,39 @@ body {
 .nav-menu a:hover::after {
     width: 100%;
 }
-.custom-navbar{
 
-    max-width:1200px;
+.custom-navbar {
 
-    margin:20px auto;
+    max-width: 1200px;
 
-    border-radius:20px;
+    margin: 20px auto;
 
-    background:rgba(255,255,255,.95);
+    border-radius: 20px;
 
-    backdrop-filter:blur(10px);
+    background: rgba(255, 255, 255, .95);
+
+    backdrop-filter: blur(10px);
 
     box-shadow:
-    0 10px 30px rgba(0,0,0,.08);
+        0 10px 30px rgba(0, 0, 0, .08);
 }
 
 /* BOTÕES */
 
-.btn-primary{
+.btn-primary {
 
-    border-radius:14px !important;
+    border-radius: 14px !important;
 
-    padding:10px 24px !important;
+    padding: 10px 24px !important;
 
-    font-weight:600 !important;
+    font-weight: 600 !important;
 }
-.btn-primary:hover{
 
-    transform:translateY(-2px);
+.btn-primary:hover {
 
-    transition:.3s;
+    transform: translateY(-2px);
+
+    transition: .3s;
 }
 
 
@@ -395,82 +431,83 @@ body {
 }
 
 /* DIFERENCIAIS */
-.diferenciais{
+.diferenciais {
 
-    max-width:1200px;
-    margin:120px auto;
+    max-width: 1200px;
+    margin: 120px auto;
 
-    padding:0 20px;
+    padding: 0 20px;
 
-    display:flex;
-    align-items:center;
-    gap:50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
-.diferenciais-texto{
-    flex:1;
+.diferenciais-texto {
+    flex: 1;
 }
 
-.diferenciais-imagem{
-    flex:1;
+.diferenciais-imagem {
+    flex: 1;
 }
 
-.diferenciais-imagem img{
+.diferenciais-imagem img {
 
-    width:100%;
+    width: 100%;
 
-    border-radius:30px;
+    border-radius: 30px;
 
     box-shadow:
-    0 20px 40px rgba(0,0,0,.10);
+        0 20px 40px rgba(0, 0, 0, .10);
 }
 
-.tag-section{
+.tag-section {
 
-    color:#2563EB;
+    color: #2563EB;
 
-    font-weight:600;
+    font-weight: 600;
 
-    display:block;
+    display: block;
 
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
-.diferenciais h2{
+.diferenciais h2 {
 
-    font-size:2.5rem;
+    font-size: 2.5rem;
 
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
-.diferenciais p{
+.diferenciais p {
 
-    color:#6B7280;
+    color: #6B7280;
 
-    line-height:1.8;
+    line-height: 1.8;
 
-    margin-bottom:25px;
+    margin-bottom: 25px;
 }
 
-.diferenciais ul{
+.diferenciais ul {
 
-    list-style:none;
+    list-style: none;
 
-    padding:0;
+    padding: 0;
 }
 
-.diferenciais li{
+.diferenciais li {
 
-    margin-bottom:15px;
+    margin-bottom: 15px;
 
-    font-weight:500;
-}
-.diferenciais-imagem img{
-    transition:.4s;
+    font-weight: 500;
 }
 
-.diferenciais-imagem img:hover{
-    transform:scale(1.02);
+.diferenciais-imagem img {
+    transition: .4s;
+}
+
+.diferenciais-imagem img:hover {
+    transform: scale(1.02);
 }
 
 
@@ -518,25 +555,25 @@ body {
         max-width: 400px;
     }
 
-    .diferenciais{
+    .diferenciais {
 
-    min-height:auto;
+        min-height: auto;
 
-    padding:30px 20px;
+        padding: 30px 20px;
 
-    justify-content:center;
+        justify-content: center;
 
-    text-align:center;
-}
+        text-align: center;
+    }
 
-.info-box{
+    .info-box {
 
-    max-width:100%;
-}
+        max-width: 100%;
+    }
 
-.info-box h2{
+    .info-box h2 {
 
-    font-size:1.8rem;
-}
+        font-size: 1.8rem;
+    }
 
 }
