@@ -34,38 +34,39 @@ body {
 
 
 
-
 /* LOGO */
 .logo {
     text-decoration: none;
 
     color: #2563EB;
-   
-    font-size:2rem;
-    font-weight:800;
-    
+
+    font-size: 2rem;
+    font-weight: 800;
+
 
     letter-spacing: -0.5px;
 }
 
 /* MENU */
 
-.custom-navbar{
+.custom-navbar {
 
-    max-width:1300px;
+    max-width: 1300px;
 
-    min-height:85px;
+    min-height: 85px;
 
-    margin:20px auto;
+    margin: 20px auto;
 
-    border-radius:20px;
+    border-radius: 20px;
 
-    background:rgba(255,255,255,.95);
 
-    backdrop-filter:blur(10px);
+
+    background: rgba(255, 255, 255, .95);
+
+    backdrop-filter: blur(10px);
 
     box-shadow:
-    0 10px 30px rgba(0,0,0,.08);
+        0 10px 30px rgba(0, 0, 0, .08);
 }
 
 .menu-btn {
@@ -78,17 +79,17 @@ body {
     display: none;
 }
 
-.navbar-nav{
+.navbar-nav {
 
-    gap:15px;
+    gap: 15px;
 }
 
 .nav-link {
 
-    font-size:1rem;
-    font-weight:500;
+    font-size: 1rem;
+    font-weight: 500;
 
-    padding:10px 15px !important;
+    padding: 10px 15px !important;
 
     position: relative;
 
@@ -193,7 +194,7 @@ body {
 
 
 .btn-login:hover {
-    background: #F3F4F6;
+    background: #f6f5f3;
 }
 
 
@@ -283,11 +284,14 @@ body {
 .btn-primary {
 
     background: #2563EB;
+
     color: white;
 
     text-decoration: none;
 
-    padding: 16px 28px;
+    align-content: center;
+
+    padding: 16px 20px;
 
     border-radius: 14px;
 
@@ -379,7 +383,7 @@ body {
     max-width: 1200px;
     margin: 50px auto;
 
-    background: white;
+    background: rgba(255, 255, 255, 0.973);
 
     padding: 40px;
 
@@ -472,12 +476,6 @@ body {
     margin-bottom: 15px;
 }
 
-.diferenciais h2 {
-
-    font-size: 2.5rem;
-
-    margin-bottom: 20px;
-}
 
 .diferenciais p {
 
@@ -487,21 +485,6 @@ body {
 
     margin-bottom: 25px;
 }
-
-.diferenciais ul {
-
-    list-style: none;
-
-    padding: 0;
-}
-
-.diferenciais li {
-
-    margin-bottom: 15px;
-
-    font-weight: 500;
-}
-
 .diferenciais-imagem img {
     transition: .4s;
 }
@@ -513,9 +496,96 @@ body {
 
 
 
+/* COMO FUNCIONA */
+
+.como-funciona{
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.passos{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.passo{
+    width: 250px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.08);
+}
+
+.numero{
+    width: 60px;
+    height: 60px;
+    background: #ff914d;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
+/* CADASTRO */
+
+.cadastro-petshop{
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.cadastro-petshop h2{
+    margin-bottom: 20px;
+}
+
+.cadastro-petshop p{
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.btn-cadastro{
+    background: #ff914d;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Toques mais orgânicos */
+.hero {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+}
+
+.search-box {
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.search-box:hover {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    transform: translateY(-2px);
+}
+
+/* Cards de serviços mais amigáveis */
+.service-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #f1f5f9;
+}
+
+.service-card:hover {
+    border-color: #2563eb;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgb(37 99 235 / 0.1);
+}
 
 @media(max-width:992px) {
 
